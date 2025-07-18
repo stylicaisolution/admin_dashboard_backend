@@ -49,10 +49,11 @@ const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
       "http://localhost:3000",
+      "https://www.stylic.ai",
+      "https://stylic.ai",
       "http://localhost:3001",
       "https://app.stylic.ai",
       "https://www.app.stylic.ai",
-      "https://stylic.ai",
       "http://localhost:8000",
       "http://localhost:8080"
     ];

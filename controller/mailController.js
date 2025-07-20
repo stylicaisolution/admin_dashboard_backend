@@ -507,7 +507,7 @@ export const sendRegisterMailManager = async (req, res) => {
     try {
       // Configure Gmail SMTP Transport (Without host)
       const transporter = nodemailer.createTransport({
-        host: "email-smtp.us-east-1.amazonaws.com",
+        host: "smtp.hostinger.com",
         port: 587,
         secure: false, // Use STARTTLS
         auth: {

@@ -399,8 +399,6 @@ export const companyRegister = async (req, res, next) => {
       designation,
       added_user_type,
       password,
-      credit_balance,
-      gold_balance,
       added_user_id,
       pancard,
       email,
@@ -440,7 +438,8 @@ export const companyRegister = async (req, res, next) => {
     }
 
     const dataid = generateUserId("company");
-
+    const credit_balance = 5;
+    const gold_balance = 3;
     const newcompany = new COMPANY({
       dataid,
       first_name,
